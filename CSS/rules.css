@@ -1,0 +1,128 @@
+#main{
+    background-image: url("../images/bckg.jpg");
+    background-size: cover;
+}
+.Acccordion-section{
+    padding: 50px 0 0 0;
+}
+.accordion{
+    display: block;
+    width:50%;
+    max-width: 80rem;
+    margin: 0 auto;
+    box-shadow:0 0 10px rgba(0, 0, 0,.2);
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background:#070606;
+    border: 1px solid #F8C621;
+    transition: ease-in-out 0.4s;
+}
+.RulesText{
+    text-align: center;
+    padding: 150px 0 0;
+    color: white;
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.line{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #D1A103;
+    padding: 10px 0;
+    margin: 0 42vw;
+}
+
+
+
+.accordion__label,
+.accordion__content {
+    padding: 14px 20px ;
+    transition: ease-in-out 0.4s;
+}
+.accordion__label{
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+    
+}
+.accordion__label:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+.accordion__label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50% );
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.accordion__content{
+    background:#0a1010;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+    transition: ease-in-out 0.4s;
+}
+.accordion__input{
+    display: none;
+    transition: ease-in-out 0.4s;
+}
+.accordion__input:checked ~ .accordion__content {
+ display: block;
+}
+.accordion__input:checked ~ .accordion__label::after{
+    transform: translateY(-50%) rotate(0.5turn);
+    
+}
+
+.rules-link{
+    color: white;
+}
+.verify{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family: 'orbitorn', sans-serif;
+}
+.section3{
+    background-image: url("../images/bckg.jpg");
+    background-size: cover;
+}
+  
+@media only screen and (max-width:800px) {
+    .accordion {
+        display: block;
+        width:95%;
+        max-width: 80rem;
+        margin: 0 auto;
+     
+    }
+
+  }
+
+   
+@media only screen and (max-width:800px) {
+    .line{
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 3px solid #D1A103;
+        padding: 10px 0;
+        margin: 0 32vw; 
+    }
+.rules-link{
+    width: 300px;
+    margin: 10px;
+ }
+ 
+}

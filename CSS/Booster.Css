@@ -1,0 +1,70 @@
+#main{
+    background: url(../images/BG.png) center center no-repeat;
+    background-size: cover;
+}
+
+.RulesText{
+    text-align: center;
+    padding: 150px 0 0;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+}
+.Ln{
+ font-weight: 500;
+ border-bottom: 2px solid #D1A103;
+ margin: 0 42vw;
+ padding: 10px 0;
+ font-size: 30px;
+ font-family: 'roboto', sans-serif;
+
+}
+.boosterl{
+    color: white;
+    font-size: 50px;
+}
+
+#Section2{
+    background:black;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+input[type=submit] {
+    background-color: #F8C621;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.joinNowButton {
+    background-color: #F8C621;
+    color: black !important;
+    width: 125px;
+    font-weight: 700;
+    font-family: 'Orbitron';
+    width: 200px;
+    padding: 10px 0 10px 0 ;
+}
+
+a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;   
+}
+
+@media only screen and (max-width:800px) {
+    .Ln{
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 3px solid #D1A103;
+        padding: 10px 0;
+        margin: 0 32vw; 
+    }
+
+ 
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhoodlively | Shop</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/shop.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--AOS Animations-->
+    <link rel="icon" href="https://i.ibb.co/5Lr5Ypk/Screenshot-2024-06-22-114319.png" type="image/gif" sizes="20x20">
+
+    <!-- Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/939c3b7b3f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="main">
+        <div class="navBG">
+            <nav class="nav">
+                <div class="logo-container">
+                  
+                    <h2>Neighbor<span style="color: #F8C621;">hood </span>lively</h2>
+                </div>
+                <ul class="nav-links-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="booster.html">Become a Booster</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li>
+                    <li><a href="https://discord.gg/mgl" class="joinNowBTN">Join Now</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <div>
+                    <h2>Neighbor<span style="color: #F8C621;">hood </span>lively</h2>
+                </div>
+                <div class="mobile-nav-last-div">
+                    <button id="toggleNav" onclick="toggleMobile()"><i class="fas fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+        <div id="mobileLinks">
+            <ul class="mobile-nav-links-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="booster.html">Become a Booster</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="https://discord.gg/mgl" class="joinNowBTN">Join Now</a></li>
+            </ul>
+        </div>
+
+      <--
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade" id="firstProduct1">
+                <div class="mySlides1">
+                    <img src="https://i.ibb.co/fQM93VK/images.jpg" alt="Poster Deinging" class="model-image1">
+                </div>
+                <div class="mySlides2">
+                    <h1 class="h1-main">Local <br>Artisanal Goods</h1>
+                    <br>
+                    <h4 class="h4-secondary"><br>
+                        Discover unique crafts, artworks, and handmade products created by local artisans.</h4>
+                    <div class="price-container">
+                        <h2 class="price">$35.00</h2>
+                        <h2 class="price2">$45.99</h2>
+                    </div>
+                    <div class="colors-container">
+                        <h4 class="colortxt">Colors:</h4>
+                        <div class="colorsRound">
+                            <div class="colorPallet1"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <a target="_blank" href="" class="product-buynow">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+          
+            <div class="mySlides fade" id="firstProduct2">
+                <div class="mySlides1">
+                    <div class="circle"></div>
+                    <img src="images/products/t-shirt-white.png" alt="White T-Shirt" class="model-image2">
+                </div>
+                <div class="mySlides2">
+                    <h1 class="h1-main">My Gildan <br>Softstyle T-Shirt</h1>
+                    <br>
+                    <h4 class="h4-secondary">100% Ring-spun cotton <br></h4>
+                    <div class="price-container">
+                        <h2 class="price">$20.00</h2>
+                        <h2 class="price2">$35.99</h2>
+                    </div>
+                    <div class="colors-container">
+                        <h4 class="colortxt">Colors:</h4>
+                        <div class="colorsRound" style="width: fit-content;">
+                            <div class="colorPallet1"></div>
+                            <div class="colorPallet2" style="margin-left: 10px;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045454" class="product-buynow">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+        
+          
+            <!--<div class="mySlides fade" id="firstProduct">
+                <div class="mySlides1">
+                    <div class="circle"></div>
+                    <img src="images/temp-Model.png" alt="White T-Shirt" class="model-image">
+                </div>
+                <div class="mySlides2">
+                    <h1 class="h1-main">Arabic <br>T-Shirt</h1>
+                    <br>
+                    <h4 class="h4-secondary">50% Cotton, 50% Polyester. Unisex design. <br>
+                        Front pouch pocket.</h4>
+                    <div class="price-container">
+                        <h2 class="price">$49.99</h2>
+                        <h2 class="price2">$79.99</h2>
+                    </div>
+                    <div class="colors-container">
+                        <h4 class="colortxt">Colors:</h4>
+                        <div class="colorsRound">
+                            <div class="colorPallet1"></div>
+                            <div class="colorPallet2"></div>
+                            <div class="colorPallet3"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <a href="" class="product-buynow">
+                        Buy Now
+                    </a>
+                </div>
+            </div>-->
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             <!-- The dots/circles -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <!--<span class="dot" onclick="currentSlide(3)"></span>-->
+            </div>
+          </div>
+         
+    </section>
+    <section id="adContainer">
+        <div class="leftad">
+            <div>
+                <h4 class="colortxt" data-aos="fade-right" data-duration="300" data-aos-offset="200">Winter Sale</h4>
+                <h2 class="header2" style="margin-top: 10px;" data-aos="fade-right" data-duration="300" data-aos-offset="200"><span style="color: #F8C621;">HUGE</span> Sale on all of our items</h2>
+                <p class="discountTxt" data-aos="fade-right" data-duration="300" data-aos-offset="100">Limited Time Only</p>
+                <a target="_blank" href="https://streamlabs.com/yushaevans/merch" class="viewProducts" data-aos="fade-right" data-duration="300" data-aos-offset="100">View Products</a>
+            </div>
+            <div>
+                <img src="images/products/MousePad.png" alt="hat" style="width: 70%;" data-aos="fade-up-left" data-duration="300" data-aos-offset="200">
+            </div>
+        </div>
+        <div class="rightad">
+            <div class="trendingItem" data-aos="fade-up-left" data-duration="100" data-aos-offset="300">
+                <h4 class="colortxt" style="color: white;" data-aos="fade-up" data-duration="300" data-aos-offset="300">Trending</h4>
+                <h2 class="header2" data-aos="fade-up" data-duration="300" data-aos-offset="300">MGL - Mug</h2>
+                <p class="discountTxt" style="color: white; margin-top: 40px;">High Quality ceramic Mugs</p>
+                <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045453" class="viewProducts" style="margin-top: 50px;">View</a>
+                <!-- <img src="images/mgl-mug.png" alt="Trending Products" class="trendingImage"> -->
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <h2 class="header3" data-aos="fade-right" data-duration="200" data-aos-offset="200">Shop All Products</h2>
+        <div class="productCarousel">
+            <h2 class="header4" data-aos="flip-right" data-duration="300" data-aos-offset="200">Sweatshirts & Hoodies</h2>
+            <br><br>
+            <div class="carousel1">
+                    <div class="product-Container">
+                        <img src="./images/products/muslimGamersLeague - white.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Basic hoodie</h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$35.00</h3>
+                            <h3 class="productPrice2">$49.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045455" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/Muslim Gamers League - black.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Basic hoodie
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$35.00</h3>
+                            <h3 class="productPrice2">$49.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045455" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/Muslim Gamers League - gray.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Basic hoodie
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$35.00</h3>
+                            <h3 class="productPrice2">$49.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045455" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/Muslim Gamers League - pink.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Basic hoodie
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$35.00</h3>
+                            <h3 class="productPrice2">$49.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045455" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/Muslim Gamers League - red.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Basic hoodie
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$35.00</h3>
+                            <h3 class="productPrice2">$49.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045455" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/default-hoodie-black.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Basic Hoodie</h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$35.00</h3>
+                            <h3 class="productPrice2">$49.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045522" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/halal-hoodie-black.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Tagline Hoodie
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$27.00</h3>
+                            <h3 class="productPrice2">$39.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045618" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/halal-hoodie-gray.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Tagline Hoodie
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$27.00</h3>
+                            <h3 class="productPrice2">$39.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045618" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/halal-hoodie-white.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Tagline Hoodie</h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$27.00</h3>
+                            <h3 class="productPrice2">$39.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045618" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/champion-black.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Logo Champion Hoodie
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$55.00</h3>
+                            <h3 class="productPrice2">$69.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045502" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/champion-gray.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Logo Champion Hoodie
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$55.00</h3>
+                            <h3 class="productPrice2">$69.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045502" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/champion-blue.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL Logo Champion Hoodie</h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$55.00</h3>
+                            <h3 class="productPrice2">$69.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045502" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/champion-black-sweatshirt.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL logo Champion Crewneck sweatshirt
+
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$50.00</h3>
+                            <h3 class="productPrice2">$65.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045546" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/champion-blue-sweatshirt.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL logo Champion Crewneck sweatshirt
+
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$50.00</h3>
+                            <h3 class="productPrice2">$65.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045546" class="addToCart">Add To Cart</a>
+                    </div>
+                    <div class="product-Container">
+                        <img src="./images/products/champion-gray-sweatshirt.png" alt="Selam Chest Sweatshirt">
+                        <h3 class="product-title">MGL logo Champion Crewneck sweatshirt
+                        </h3>
+                        <div class="product-price-container">
+                            <h3 class="productPrice">$50.00</h3>
+                            <h3 class="productPrice2">$65.99</h3>
+                        </div>
+                        <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045546" class="addToCart">Add To Cart</a>
+                    </div>
+
+            </div>
+        </div>
+        <br><br>
+        <div class="productCarousel">
+            <h2 class="header4" data-aos="flip-right" data-duration="300" data-aos-offset="200">T-Shirts</h2>
+            <br><br>
+            <div class="carousel1">
+                <div class="product-Container">
+                    <img src="./images/products/34262646-mockup-160616821710584-0.png" alt="MGL Champion long sleeve tee">
+                    <h3 class="product-title">MGL Champion long sleeve tee</h3>
+                    <div class="product-price-container">
+                        <h3 class="productPrice">$35.00</h3>
+                        <h3 class="productPrice2">$49.99</h3>
+                    </div>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045519" class="addToCart">Add To Cart</a>
+                </div>
+                <div class="product-Container">
+                    <img src="./images/products/34262646-mockup-160616821710609-0.png" alt="MGL Champion long sleeve tee">
+                    <h3 class="product-title">MGL Champion long sleeve tee</h3>
+                    <div class="product-price-container">
+                        <h3 class="productPrice">$35.00</h3>
+                        <h3 class="productPrice2">$49.99</h3>
+                    </div>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045519" class="addToCart">Add To Cart</a>
+                </div>
+                <div class="product-Container">
+                    <img src="./images/products/t-shirt-black.png" alt="My Gildan Softstyle T-Shirt">
+                    <h3 class="product-title">My Gildan Softstyle T-Shirt</h3>
+                    <div class="product-price-container">
+                        <h3 class="productPrice">$20.00</h3>
+                        <h3 class="productPrice2">$35.99</h3>
+                    </div>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045454" class="addToCart">Add To Cart</a>
+                </div>
+                <div class="product-Container">
+                    <img src="./images/products/t-shirt-white.png" alt="My Gildan Softstyle T-Shirt">
+                    <h3 class="product-title">My Gildan Softstyle T-Shirt</h3>
+                    <div class="product-price-container">
+                        <h3 class="productPrice">$20.00</h3>
+                        <h3 class="productPrice2">$35.99</h3>
+                    </div>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045454" class="addToCart">Add To Cart</a>
+                </div>
+                <div class="product-Container">
+                    <img src="./images/products/black-tee.png" alt="MGL logo long sleeve">
+                    <h3 class="product-title">MGL logo long sleeve</h3>
+                    <div class="product-price-container">
+                        <h3 class="productPrice">$28.00</h3>
+                        <h3 class="productPrice2">$35.99</h3>
+                    </div>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045623" class="addToCart">Add To Cart</a>
+                </div>
+                <div class="product-Container">
+                    <img src="./images/products/white-tee.png" alt="MGL logo long sleeve">
+                    <h3 class="product-title">MGL logo long sleeve</h3>
+                    <div class="product-price-container">
+                        <h3 class="productPrice">$28.00</h3>
+                        <h3 class="productPrice2">$35.99</h3>
+                    </div>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045623" class="addToCart">Add To Cart</a>
+                </div>
+                <div class="product-Container">
+                    <img src="./images/products/pink-tee.png" alt="MGL logo long sleeve">
+                    <h3 class="product-title">MGL logo long sleeve</h3>
+                    <div class="product-price-container">
+                        <h3 class="productPrice">$28.00</h3>
+                        <h3 class="productPrice2">$35.99</h3>
+                    </div>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045623" class="addToCart">Add To Cart</a>
+                </div>
+                <div class="product-Container">
+                    <img src="./images/products/gray-tee.png" alt="MGL logo long sleeve">
+                    <h3 class="product-title">MGL logo long sleeve</h3>
+                    <div class="product-price-container">
+                        <h3 class="productPrice">$28.00</h3>
+                        <h3 class="productPrice2">$35.99</h3>
+                    </div>
+                    <a target="_blank" href="https://streamlabs.com/yushaevans/merch/2045623" class="addToCart">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+-->
+
+    <footer>
+       
+        <div class="footer-center-wing">
+            <a href="" class="footer-email">MuslimGamersLeague@gmail.com</a>
+            <img class="footer-logo" src="https://i.ibb.co/5Lr5Ypk/Screenshot-2024-06-22-114319.png" alt="">
+            <p class="copyright">Copyright Muslim Gamers League 2020. Designed & Developed by <a href="https://discord.gg/p774KEH" style="text-decoration: underline; color: gray;">MCC</a></p>
+        </div>
+        <div class="footer-right-wing">
+            <ul>
+                <li><a href=""><h4>Shop our products</h4><div class="yellowSquare"><i class="fas fa-shopping-bag"></i></div></a></li>
+                <li><a href=""><h4>@Yusha Evens</h4><div class="yellowSquare"><i class="fas fa-mobile"></i></div></a></li>
+                <li><a href="https://discord.gg/mgl"><h4>Join the Discord</h4><div class="yellowSquare"><i class="fab fa-discord"></i></div></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="JS/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            if ($(window).width() >= 1060) {
+                $('.carousel1').slick({
+                slidesToShow: 3,
+                dots:true,
+                slidesToScroll: 3
+            });
+            }
+            else if ($(window).width() > 715) {
+                $('.carousel1').slick({
+                slidesToShow: 2,
+                dots:true,
+                slidesToScroll: 2
+            });
+            }
+            else if($(window).width() <= 715){
+                $('.carousel1').slick({
+                    slidesToShow: 1,
+                    dots:true,
+                    slidesToScroll: 1
+                });
+            }
+            
+            // On swipe event
+            $('.carousel1').on('swipe', function(event, slick, direction){
+            console.log(direction);
+            // left
+            });
+        });
+    </script>
+    <script>
+        //This function toggles the mobile navbar
+        function toggleMobile() {
+            var x = document.getElementById("mobileLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <!--Animation AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

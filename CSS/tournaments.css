@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+.main-tournament{
+    width: 100vw;
+    padding-top: 100px;
+    border-bottom: 5px solid #F8C621;
+    background: url('../images//BG.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Tslideshow-container{
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+.TSlides{
+    display: none;
+    width: 100vw;
+    padding: 0 15%;
+}
+.tourney-img{
+    width: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: 500;
+    font-size: 60px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 9vw;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 9vw;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    color: rgba(146, 139, 35, 0.986);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    position: absolute;
+    cursor: pointer;
+    height: 15px;
+    width: 10%;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dot1{
+      bottom: 5%;
+      right: 55%;
+  }
+  .dot2{
+      bottom: 5%;
+      right: 44%;
+  }
+  .dot3{
+      bottom: 5%;
+      right: 33%;
+  }
+  
+  .active, .dot:hover {
+    background-color: #414141;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.mainTourneyContent{
+    background: url(/images/BG.png);
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100%;
+}
+.menu{
+    width: 100vw;
+    background-color: #242424;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.menuButton{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 2rem;
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    font-weight: 600;
+    border-right: 4px solid #000;
+    transition: all ease-in-out 0.4s;
+}
+.menuButton:last-of-type{
+    border: none;
+}
+.menuButton:hover{
+    color: #F8C621;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.activatedMenu{
+    color: #F8C621;
+    text-decoration: underline;
+}
+.menuContent{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.calendar{
+    color: #fff;
+}
+.waysToPlay{
+    color:#fff;
+}
+.rulesAndGuidelines{
+    color:#fff;
+}
+.NextEvent{
+  display: flex;
+  margin: 30px;
+  flex-direction: row;
+  justify-content: center;
+}
+.poster{
+  background: url('../images/Main-Tournament-banner.png.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  border:3px solid #fff;
+  width: 210px;
+  height: 380px;
+  text-align: center;
+}
+.description{
+  text-align: center;
+}
+.date{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 0 10px 40px;
+}
+.yellow{
+  color: #F8C621;
+}
+.eventDate{
+  color: #000;
+  background-color: #F8C621;
+  font-size: 1rem;
+  padding: .3rem;
+}
+.Tourneyinfo{
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 20px 20px;
+  margin: 0 0 0px 40px;
+}
+.tournamentTitle{
+  color: #DE9506;
+  font-weight: 500;
+  font-size: 2rem;
+  border-bottom: 3px solid #DE9506;
+  margin-bottom: 10px;
+}
+.descriptionTxt{
+  text-align: left;
+}
+.registerButton{
+  width: 90%;
+  color: #000;
+  padding: 10px 0;
+  font-weight: 700;
+  background: #DE9506;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 10px 40px;
+}
+.upcomingEvents{
+  color: #F8C621;
+}
+.clenderEvents{
+  padding: 30px 10%;
+}
+.accordion__label_event,
+.accordion__content_event {
+    padding: 14px 20px ;
+    transition: ease-in-out 0.4s;
+}
+.accordion__label_event{
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #242424;
+    cursor: pointer;
+    position: relative;
+    margin-top: 15px;
+    transition: background 0.1s;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70px;
+}
+.accordion__label_event:hover{
+  background-color: #363636;
+}
+.accordion__label_event::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50% );
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+    background-color: #242424;
+}
+
+.accordion__content_event{
+    background:#252517ab;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+    transition: all ease-in-out 0.4s;
+}
+.accordion__input_event{
+    display: none;
+    transition: all ease-in-out 0.4s;
+}
+.accordion__input_event:checked ~ .accordion__content_event {
+ display: block;
+}
+.accordion__input_event:checked ~ .accordion__label_event::after{
+    transform: translateY(-50%) rotate(0.5turn);
+    
+}
+.accordian__dates{
+  display: flex;
+  text-align: center;
+  vertical-align: baseline;
+}
+.accordian_date{
+  color: #F8C621;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.accordian_date2{
+  color: #F8C621;
+  font-size: 1rem;
+  padding: .7rem 0 0 .7rem;
+}
+.accordian_title{
+  color: #DE9506;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.accordian_platform{
+  color: #DE9506;
+  font-size: 1.3rem;
+  font-weight: 400;
+}

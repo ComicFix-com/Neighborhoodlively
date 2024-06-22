@@ -1,0 +1,479 @@
+#main{
+  background-image: url(/images/BG.png);
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  background-position: center center; 
+}
+
+/*Section 1*/
+
+#mainSection{
+  color: white;
+  padding: 110px 150px 0px 150px;
+  text-align: center;
+}
+.grid-container2{
+    padding: 0 10%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.joinNowButton{
+  background-color: #F8C621;
+  color: black !important;
+  width: 125px;
+  font-weight: 700;
+  font-family: 'Orbitron';
+}
+
+.joinNowButton:hover, .joinNowButton:focus{
+  background-color: #f8c621cc;
+}
+
+p {
+  text-align: center;
+  padding-top: 1em;
+}
+
+ul.social-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+ul.social-set li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* Font Awesome icons */
+a.sociali {
+  font-size: 2em;
+  line-height: 1.2em;
+  padding: 10px;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 10px !important;
+  padding-bottom: 10px !important;
+}
+a.sociali:hover, a.sociali:focus {
+  background: #f8c621d5;
+}
+  /*Game Panels*/
+  .column {
+      width: 25%;
+    }
+      
+    .grid-container2 > .row > .column{
+      text-align: center;
+    }
+    /* Clear floats after the columns */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .hidden {
+    display: none;
+}
+    /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1299px) {
+  .column {
+    width: 50%;
+    padding: 15px;
+  }
+  .hidden2{
+    display: none;
+  }
+}
+@media screen and (max-width: 799px) {
+  .column {
+    width: 50%;
+    
+  }
+  p{
+    padding: 0 10%; 
+  }
+  #mainSection{
+      padding: 150px 50px 0 50px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .column {
+    width: 50%;
+  }
+  #mainSection{
+      padding: 150px 25px 0px 25px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .column {
+    width: 100%;
+  }
+  #mainSection{
+      padding: 150px 25px 0px 25px;
+  }
+  .hiddenTwo {
+      display: none;
+  }
+}
+    .seeAllGames{
+      display: block;
+      background-color: #00000000;
+      border: solid white 1px; 
+      color: rgb(255, 255, 255) !important;
+      width: 175px;
+      padding: 10px 0 10px 0;
+      font-weight: 700;
+      margin-top: 0px;
+      font-family: 'Orbitron';
+    }
+    .seeAllGames:hover{
+      background: #f8c621d5;
+      border: none;
+    }
+    .joinNowButton{
+      width: 200px;
+      padding: 10px 0 10px 0;
+    }
+    
+    #more {display: none;}
+
+    /*SECTION 2 STARTS HERE*/
+
+    #sectionTwo{
+      background-image: url(/images/Among\ Us\ Skeld\ Map.png);
+      background-color: rgb(51, 48, 48);
+      background-repeat: no-repeat no-repeat;
+      background-position: center center;
+      width: 100%;
+      color: white;
+      font-family: 'Roboto';
+      font-weight: 100;
+      padding: 0 !important;
+    }
+    .backgroundOverlay{
+      background-color: rgba(0, 0, 0, 0.87);
+      width: 100%;
+      height: inherit;
+      padding: 200px 0 200px 0;
+    }
+
+  .aboutUsDescriptionsH2{
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 18px;
+  }
+  .aboutUsDescriptionsP{
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 15px;
+  }
+  .sectionThree{
+    background-color: black;
+  }
+
+  /*Section 3 Begins Here!*/
+
+  
+/*CONTACT FORM\/*/
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: #d1a103;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+border-radius: 5px;
+background-color: #29282700;
+padding: 0 15vw;
+margin: auto; 
+}
+label{
+color: #F8C621;
+}
+
+/*CONTACT FORM ENDS HERE*/
+
+#sectionThreeLogo{
+border-bottom: 2px solid #F8C621; 
+padding: 15px;
+width: 150px;
+}
+.sctThreeH1{
+color: white;
+text-align: center;
+}
+
+
+
+/* ----------------------------------------------
+* Generated by Animista on 2020-11-24 17:43:13
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+
+/*Slide in from Top*/
+
+.slide-bottom {
+-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+/*Slide in from top*/
+.slide-top {
+-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+/*Rotate From Center*/
+.rotate-center {
+-webkit-animation: rotate-center 1s ease-in-out both;
+        animation: rotate-center 1s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*Slide In From Top*/
+.slide-in-top {
+animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*Slide in from right*/
+.slide-in-right {
+	-webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*Slide from from left*/
+.slide-in-left {
+	-webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.textUnderlines{
+  border-bottom: 2px solid #F8C621 ;
+  margin: 0 45% 0 45%;
+  padding: 70px 0 0 0;
+  font-size: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 1648px) {
+  .textUnderlines{
+    margin: 0 42%;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .textUnderlines{
+    margin: 0 39%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .textUnderlines{
+    margin: 0 33% 20px 33%;
+    font-size: 30px;
+    
+  }
+}
+@media screen and (max-width: 485px) {
+  .textUnderlines{
+    margin: 0 27% 20px 27%;
+  }
+}
+@media screen and (max-width: 359px) {
+  .textUnderlines{
+    margin: 0 23% 20px 23%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container{
+    width: 35%;
+    padding: 0;
+  }
+}
+
+.cardResize{
+  width: 60%;
+}
